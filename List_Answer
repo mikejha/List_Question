@@ -1,0 +1,17 @@
+l = [1,3,1,4,1,4,1,3]#l= [1,5,3,88,9,7,33,55,1]
+avg_val_old = 0
+ind_sum_old = 0
+for j in range(0,len(l)-1):
+    for i in range(0,len(l)-1-j):
+        avg_val_new = (l[i] + l[i+1])/2
+      # print('avg of ',l[i],' and ',l[i+1],' is ',avg_val_new)
+
+        if avg_val_new >= avg_val_old :
+            avg_val_old = avg_val_new
+            ind_val,next_ind_val = i,i+1
+            if ind_sum_old < (ind_val+next_ind_val):
+                ind_sum_old = (ind_val+next_ind_val)
+                ind_val_print , next_ind_val_print = ind_val,next_ind_val
+
+print('answer is sum of the indexes',ind_val_print,'and', next_ind_val_print,
+      'because its having element sum',avg_val_old,'element sum and index sum is highest i.e.',ind_sum_old)
