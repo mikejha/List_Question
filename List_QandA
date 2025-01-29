@@ -1,0 +1,15 @@
+PYTHON_List_Question:
+# question 1:
+ques1: What is the higest sum of the pair of indexes of the consicutive elements which is having highest average.
+l= [1,5,3,88,9,7,33,55,1]
+answer: 3 + 4 = 7 is answer# average of 88 and 9 is the higest in the list.
+l = [1,3,1,4,1,4,1,3]
+answer: among 2+3 and 3+4 and 4+5 and 5+6, 5+6 is the highest, so 11 is answer.
+
+# question 2:
+ques2: What is the higest sum of the pair of indexes of the alternate elements which is having highest average.
+hint: compare all odd index and avan index individually.
+l= [1,5,3,88,9,7,33,55,1]
+answer:
+l = [1,3,1,4,1,4,1,3]
+answer: 
